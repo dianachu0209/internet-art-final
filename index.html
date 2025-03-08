@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>a shelf of diana</title>
+    <link rel="icon" href="flower.webp">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+      .title{
+        font-family: "Mynerve", cursive;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+      }
+      .blurb{
+        font-family: "Mynerve";
+        text-align: center;
+        color: white;
+      }
+      .shelf {
+        position: relative;
+        width: 90%;
+        height: 30px;
+        border: .5px solid gray;
+        background: linear-gradient(0deg, rgba(150, 196, 163, 1) 0%, rgba(246, 222, 164, 1) 48%);
+        margin-top: 250px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .shelf::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        border: .5px solid gray;
+        background: linear-gradient(270deg, rgba(65, 21, 21, 1) 0%, rgba(193, 163, 98, 1) 100%);
+        width: 20px;
+        height: 40px;
+        border-radius: 30%;
+        clip-path: polygon(0 0, 100% 0, 82% 100%, 18% 100%);
+      }
+
+      .shelf::after {
+        content: '';
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        border: .5px solid gray;
+        background: linear-gradient(270deg, rgba(65, 21, 21, 1) 0%, rgba(193, 163, 98, 1) 100%);
+        width: 20px;
+        height: 40px;
+        border-radius: 30%;
+        clip-path: polygon(0 0, 100% 0, 82% 100%, 18% 100%);
+      }
+    </style>
+  </head>
+  <body style="background: #f3d4d4">
+    <h1 class="title">
+      diana's shelf of things
+    </h1>
+    <p class="blurb">
+      here's a display of things that are important to me in some way, shape, or form. some have a significant effect on my life while others are just things that i have (or currently do) like!
+    </p>
+      <div class="shelf">
+      </div>
+      <div class="shelf">
+      </div>
+      <div class="shelf">
+      </div>
+  </body>
+</html>
