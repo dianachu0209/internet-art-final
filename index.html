@@ -141,6 +141,7 @@
         left: 500px;
         bottom: 325px;
       }
+
       .music {
         position: relative;
         height: 200px;
@@ -175,10 +176,11 @@
         font-size: 15px;
         margin-top: 15px;
       }
+
       .japanese-book {
         width: 25px;
         height: 110px;
-        background: radial-gradient(circle, rgba(197,7,7,1) 0%, rgba(255,255,255,1) 57%);
+        background: radial-gradient(circle, rgba(197, 7, 7, 1) 0%, rgba(255, 255, 255, 1) 57%);
         position: relative;
         bottom: 477px;
         left: 305px;
@@ -195,6 +197,7 @@
         font-size: 15px;
         margin-top: 15px;
       }
+
       .monet {
         height: 230px;
         border: 5px solid #555;
@@ -202,15 +205,34 @@
         left: 360px;
         bottom: 715px;
       }
+
       .plant2 {
         position: relative;
-        bottom: 814px;
+        bottom: 714px;
         height: 100px;
-        left: 790px;
+        left: 370px;
+      }
+
+      .lamp {
+        position: relative;
+        height: 200px;
+        left: 20px;
+        bottom: 170px;
       }
     </style>
   </head>
   <body style="background: #f3d4d4">
+    <script>
+      function turnOnOff() {
+        let image = document.getElementById('lamp');
+        if (image.src.match("lamp-on"))
+          image.src =
+          "lamp-off.webp";
+        if (image.src.match("lamp-off"))
+          image.src =
+          "lamp-on.png";
+      }
+    </script>
     <h1 class="title">
       diana's shelf of things
     </h1>
@@ -233,7 +255,7 @@
       <a href="https://www.nytimes.com/crosswords" target="_blank">NYT Games</a>
     </div>
     <a href="https://www.leagueoflegends.com/en-us/champions/seraphine/" target="_blank"><img class="seraphine" src="serafigure.webp" alt="seraphine"></a>
-        <a href="https://open.spotify.com/user/21gbx2vbejkilwenzoqrefxki?si=2f0701ff183d44a8" target="_blank"><img class="music" src="music player.webp" alt="music player"></a>
+    <a href="https://open.spotify.com/user/21gbx2vbejkilwenzoqrefxki?si=2f0701ff183d44a8" target="_blank"><img class="music" src="music player.webp" alt="music player"></a>
     <div class="shelf">
       <a href="https://tetr.io/" target="_blank"><img class="tetris" src="tetris.webp" alt="tetris"></a>
       <div class="chinese-book">
@@ -245,7 +267,8 @@
       <a href="https://www.artic.edu/" target="_blank"><img class="monet" src="haystacks monet.jpg" alt="monet"></a>
       <img class="plant2" src="plant2.png" alt="plant">
     </div>
-    <div class="shelf">
+    <div class="shelf" style="margin-top: 200px">
+      <img id="lamp" class="lamp" onclick="turnOnOff()" src="lamp-off.webp" alt="lamp">
     </div>
   </body>
 </html>
