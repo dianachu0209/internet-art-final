@@ -25,7 +25,7 @@
 
       .shelf {
         position: relative;
-        width: 90%;
+        width: 900px;
         height: 30px;
         border: .5px solid gray;
         background: linear-gradient(0deg, rgba(150, 196, 163, 1) 0%, rgba(246, 222, 164, 1) 48%);
@@ -219,6 +219,34 @@
         left: 20px;
         bottom: 170px;
       }
+      .plant3 {
+        position: relative;
+        bottom: 193px;
+        height: 150px;
+        left: 50px;
+      }
+      .frieren {
+        position: relative;
+        bottom: 190px;
+        left: 80px;
+        height: 120px;
+      }
+      .book {
+        width: 22px;
+        height: 80px;
+        position: relative;
+        bottom: 285px;
+        border: 1px solid black;
+        border-radius: 3%;
+        text-align: center;
+      }
+      .book a {
+        text-decoration: none;
+        color: black;
+        writing-mode: vertical-rl;
+        font-size: 5px;
+        margin-top: 8px;
+      }
     </style>
   </head>
   <body style="background: #f3d4d4">
@@ -269,6 +297,19 @@
     </div>
     <div class="shelf" style="margin-top: 200px">
       <img id="lamp" class="lamp" onclick="turnOnOff()" src="lamp-off.webp" alt="lamp">
+      <img class="plant3" src="plant3.webp" alt="plant">
+      <a href="https://animetake.tv/anime/frieren-beyond-journey-s-end/" target="_blank">
+        <img class="frieren" src="frieren.png" alt="frieren"></a>
+      <div class="book" style="background: #fce89e; left: 500px;">
+        <a href="https://www.mysteriousbenedictsociety.com/series" target="_blank" > The Mysterious Benedict Society</a>
+      </div>
+      <div class="book" style="background: #5c49ab; left: 524px; bottom: 367px">
+        <a href="https://www.harrypotter.com/" target="_blank"style="font-size: 12px;" > Harry Potter</a>
+      </div>
+            <div class="book" style="background: #2fa772; left: 548px; bottom: 449px">
+        <a href="https://rickriordan.com/series/percy-jackson-and-the-olympians/" target="_blank"style="font-size: 10px;" > Percy Jackson</a>
+      </div>
+      
     </div>
   </body>
 </html>
