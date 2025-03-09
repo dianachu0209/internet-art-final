@@ -223,12 +223,12 @@
         position: relative;
         bottom: 193px;
         height: 150px;
-        left: 50px;
+        left: 20px;
       }
       .frieren {
         position: relative;
         bottom: 190px;
-        left: 80px;
+        left: 50px;
         height: 120px;
       }
       .book {
@@ -247,6 +247,106 @@
         font-size: 5px;
         margin-top: 8px;
       }
+      .envelope {
+        position: relative;
+        margin: 50px auto 0;
+        width: 98px;
+        height: 66px;
+        bottom: 562px;
+        left: 180px;
+        background: #cdcbee;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 0 1px #cdcbee inset;
+        
+      }
+      .envelope:before,
+      .envelope:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 0 solid transparent;
+        border-width: 33px 49px;
+      }
+      .envelope:before {
+        border-bottom-color: #cdcbee;
+        top: -100%;
+        left: 0px;
+      }
+      .envelope:after {
+        border-right-color: #cdcbee;
+        border-left-color: #cdcbee;
+        border-bottom-color: #cdcbee;
+        top: 0;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+      }
+      .paper {
+        background: #fff;
+        width: 87px;
+        height: 66px;
+        margin: 0 auto;
+        border-radius: 5px;
+        position: absolute;
+        left: 6px;
+        top: -33px;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+      }
+      .paper:before,
+      .paper:after {
+        content: '';
+        position: absolute;
+        left: 12px;
+        background: #e3f1fc;
+        height: 4px;
+        border-radius: 5px;
+      }
+      .instagram {
+        position: relative;
+        width: 96px;
+        height: 96px;
+        background: radial-gradient(circle, rgba(238,174,202,1) 20%, rgba(148,187,233,1) 100%);
+        border-radius: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 659px;
+        left: 710px;
+      }
+
+      .instagram::after {
+        content: '';
+        position: absolute;
+        top: 14px;
+        right: 13px;
+        border: 4px solid #fff;
+        height: 60px;
+        width: 60px;
+        border-radius: 15px;
+      }
+
+      .instagram::before {
+        content: '';
+        position: absolute;
+        top: 29px; /* 49 * 0.6 */
+        right: 29px; /* 49 * 0.6 */
+        border: 5px solid #fff; /* 8 * 0.6 */
+        height: 26px; /* 43 * 0.6 */
+        width: 27px; /* 45 * 0.6 */
+        border-radius: 50%;
+      }
+      .cup {
+        width: 30px;
+        height: 30px;
+        border: 1px solid gray;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 5%, rgba(11, 57, 138, 1) 5%, rgba(11, 57, 138, 1) 23%, rgba(255, 255, 255, 1) 23%, rgba(255, 255, 255, 1) 41%, rgba(11, 57, 138, 1) 41%, rgba(11, 57, 138, 1) 59%, rgba(255, 255, 255, 1) 59%, rgba(255, 255, 255, 1) 77%, rgba(11, 57, 138, 1) 77%, rgba(11, 57, 138, 1) 77%, rgba(11, 57, 138, 1) 95%, rgba(255, 255, 255, 1) 95%);
+        background-size: 100%;
+        border-radius: 5%;
+        position: relative;
+        bottom: 695px;
+        left: 840px;
+      }
+
     </style>
   </head>
   <body style="background: #f3d4d4">
@@ -306,10 +406,21 @@
       <div class="book" style="background: #5c49ab; left: 524px; bottom: 367px">
         <a href="https://www.harrypotter.com/" target="_blank"style="font-size: 12px;" > Harry Potter</a>
       </div>
-            <div class="book" style="background: #2fa772; left: 548px; bottom: 449px">
+            <div class="book" style="background: #2fa772; left: 480px; bottom: 449px">
         <a href="https://rickriordan.com/series/percy-jackson-and-the-olympians/" target="_blank"style="font-size: 10px;" > Percy Jackson</a>
       </div>
       
+        
+        <a href="https://dianachu0209.github.io/letter-to-internet/" target="_blank"><div class="envelope"><div class="paper">
+          
+        </div></div></a>
+      
+      <a href="https://dianachu0209.github.io/me-vs-my/" target="_blank"><div class="instagram">
+        
+      </div></a>
+      <a href="https://dianachu0209.github.io/css-still-life/" target="_blank"><div class="cup">
+        
+      </div></a>
     </div>
   </body>
 </html>
