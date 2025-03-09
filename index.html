@@ -5,25 +5,30 @@
     <title>a shelf of diana</title>
     <link rel="icon" href="flower.webp">
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
-      .title{
+      @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+      .title {
         font-family: "Mynerve", cursive;
         text-align: center;
         font-size: 50px;
         color: white;
       }
-      .blurb{
+
+      .blurb {
         font-family: "Mynerve";
         text-align: center;
         color: white;
       }
+
       .shelf {
         position: relative;
         width: 90%;
         height: 30px;
         border: .5px solid gray;
         background: linear-gradient(0deg, rgba(150, 196, 163, 1) 0%, rgba(246, 222, 164, 1) 48%);
-        margin-top: 250px;
         align-self: center;
         margin-left: auto;
         margin-right: auto;
@@ -54,6 +59,115 @@
         border-radius: 30%;
         clip-path: polygon(0 0, 100% 0, 82% 100%, 18% 100%);
       }
+
+      .uchicago-book {
+        width: 30px;
+        height: 100px;
+        background: radial-gradient(circle, rgba(171, 27, 27, 1) 50%, rgba(245, 121, 121, 1) 95%);
+        position: relative;
+        bottom: 101px;
+        left: 30px;
+        border: 1px solid black;
+        border-radius: 3%;
+      }
+
+      .uchicago-book a {
+        text-decoration: none;
+        color: black;
+        writing-mode: vertical-rl;
+        font-family: "Lavishly Yours", cursive;
+        font-size: 25px;
+
+        margin-top: 15px;
+      }
+
+      .gns-book {
+        width: 30px;
+        height: 100px;
+        background: linear-gradient(90deg, rgba(36, 29, 253, 1) 17%, rgba(255, 255, 255, 1) 48%, rgba(255, 160, 26, 1) 83%);
+        position: relative;
+        bottom: 203px;
+        border: 1px solid black;
+        left: 70px;
+        border-radius: 3%;
+      }
+
+      .gns-book a {
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        writing-mode: vertical-rl;
+        font-family: "Alfa Slab One", serif;
+        text-align: center;
+      }
+
+      .big-rich {
+        position: relative;
+        height: 180px;
+        width: 140px;
+        bottom: 352px;
+        left: 110px;
+      }
+
+      .plant1 {
+        position: relative;
+        bottom: 126px;
+        height: 100px;
+        left: 270px;
+      }
+
+      .flat-book {
+        width: 110px;
+        height: 15px;
+        background: gray;
+        position: relative;
+        bottom: 151px;
+        left: 380px;
+        border: 1px solid black;
+        border-radius: 4%;
+        text-align: center;
+      }
+
+      .flat-book a {
+        font-family: "UnifrakturCook", cursive;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+      }
+
+      .seraphine {
+        position: relative;
+        height: 200px;
+        left: 470px;
+        bottom: 325px;
+      }
+
+      .tetris {
+        position: relative;
+        height: 150px;
+        left: 20px;
+        bottom: 140px;
+      }
+
+      .chinese-book {
+        width: 25px;
+        height: 110px;
+        background: radial-gradient(circle, rgba(245, 245, 121, 1) 35%, rgba(197, 7, 7, 1) 100%);
+        position: relative;
+        bottom: 266px;
+        left: 160px;
+        border: 1px solid black;
+        border-radius: 3%;
+        text-align: center;
+      }
+
+      .chinese-book a {
+        text-decoration: none;
+        color: black;
+        writing-mode: vertical-rl;
+        font-size: 15px;
+        margin-top: 15px;
+      }
     </style>
   </head>
   <body style="background: #f3d4d4">
@@ -61,13 +175,31 @@
       diana's shelf of things
     </h1>
     <p class="blurb">
-      here's a display of things that are important to me in some way, shape, or form. some have a significant effect on my life while others are just things that i have (or currently do) like!
+      here's a display of things that are important to me in some way, shape, or form. some have a significant effect on my life while others are just things that i have (or currently do) like! feel free to click around on the items :)
     </p>
-      <div class="shelf">
+    <div class="shelf" style="margin-top: 200px;">
+      <div class="uchicago-book">
+        <a href="https://www.uchicago.edu/en" target="_blank">uchicago</a>
       </div>
-      <div class="shelf">
+      <div class="gns-book">
+        <a href="https://shs.greatneck.k12.ny.us/" target="_blank">great neck south high</a>
+
       </div>
-      <div class="shelf">
+      <a href="https://www.instagram.com/morisakaglobal_official_en/?hl=en" target="_blank"><img class="big-rich" src="big rich.png" alt="otter"></a>
+
+    </div>
+    <img class="plant1" src="plant.png" alt="plant">
+    <div class="flat-book">
+      <a href="https://www.nytimes.com/crosswords" target="_blank">NYT Games</a>
+    </div>
+    <a href="https://www.leagueoflegends.com/en-us/champions/seraphine/" target="_blank"><img class="seraphine" src="serafigure.webp" alt="seraphine"></a>
+    <div class="shelf">
+      <a href="https://tetr.io/" target="_blank"><img class="tetris" src="tetris.webp" alt="tetris"></a>
+      <div class="chinese-book">
+        <a href="https://study-abroad.uchicago.edu/beijing-east-asia-past-and-present" target="_blank">中文學習</a>
       </div>
+    </div>
+    <div class="shelf">
+    </div>
   </body>
 </html>
